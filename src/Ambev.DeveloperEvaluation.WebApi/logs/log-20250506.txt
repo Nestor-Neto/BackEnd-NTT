@@ -1,0 +1,30 @@
+2025-05-06 12:25:10.271 -03:00 [INF] Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService Health Check enabled at: '/health'
+2025-05-06 12:25:10.515 -03:00 [INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\Nestor Neto\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-06 12:25:10.772 -03:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5119
+2025-05-06 12:25:10.777 -03:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-05-06 12:25:10.780 -03:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-05-06 12:25:10.785 -03:00 [INF] Microsoft.Hosting.Lifetime Content root path: C:\Projeto_NetCore\Teste Empresa NTT\arquivo NTT\template\backend\src\Ambev.DeveloperEvaluation.WebApi
+2025-05-06 13:45:24.619 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5119/swagger/index.html - null null
+2025-05-06 13:45:24.890 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5119/swagger/index.html - 200 null text/html;charset=utf-8 283.2353ms
+2025-05-06 13:45:25.142 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5119/swagger/v1/swagger.json - null null
+2025-05-06 13:45:25.412 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 270.5997ms
+2025-05-06 13:53:48.664 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5119/api/Customer?page=1&size=10 - null null
+2025-05-06 13:53:48.764 -03:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'Ambev.DeveloperEvaluation.WebApi.Features.Register.CustomerController.GetAll (Ambev.DeveloperEvaluation.WebApi)'
+2025-05-06 13:53:48.820 -03:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller Ambev.DeveloperEvaluation.WebApi.Features.Register.CustomerController (Ambev.DeveloperEvaluation.WebApi).
+2025-05-06 13:53:51.261 -03:00 [INF] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (64ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."CustomerId", t."CustomerName", t."Email", t."Phone", b."BranchId", b."BranchName", b."CustomerId", b."Email", b."IsBranch", b."Phone"
+FROM (
+    SELECT c."CustomerId", c."CustomerName", c."Email", c."Phone"
+    FROM "Customers" AS c
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN "Branches" AS b ON t."CustomerId" = b."CustomerId"
+ORDER BY t."CustomerId"
+2025-05-06 13:53:51.426 -03:00 [INF] Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Customers" AS c
+2025-05-06 13:53:51.437 -03:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.IEnumerable`1[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 13:53:51.482 -03:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action Ambev.DeveloperEvaluation.WebApi.Features.Register.CustomerController.GetAll (Ambev.DeveloperEvaluation.WebApi) in 2651.4863ms
+2025-05-06 13:53:51.485 -03:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'Ambev.DeveloperEvaluation.WebApi.Features.Register.CustomerController.GetAll (Ambev.DeveloperEvaluation.WebApi)'
+2025-05-06 13:53:51.497 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5119/api/Customer?page=1&size=10 - 200 null application/json; charset=utf-8 2834.3927ms
+2025-05-06 14:09:50.169 -03:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...

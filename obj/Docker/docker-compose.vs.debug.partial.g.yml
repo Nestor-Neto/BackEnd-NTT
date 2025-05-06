@@ -1,0 +1,34 @@
+services:
+  ambev.developerevaluation.webapi:
+    image: ambevdeveloperevaluationwebapi:dev
+    build:
+      args:
+        LAUNCHING_FROM_VS: true
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Ambev.DeveloperEvaluation.WebApi"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ambev.developerevaluation.webapi$
+    volumes:
+      - C:\Projeto_NetCore\Teste Empresa NTT\arquivo NTT\template\backend\src\Ambev.DeveloperEvaluation.WebApi:/app:rw
+      - C:\Projeto_NetCore\Teste Empresa NTT\arquivo NTT\template\backend:/src:rw
+      - C:\Users\Nestor Neto\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_ambev.developerevaluation.webapi$
+      - C:\Users\Nestor Neto\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+      - C:\Users\Nestor Neto\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+      - C:\Users\Nestor Neto\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+      - C:\Users\Nestor Neto\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ambev.developerevaluation.webapi$ \"/app/bin/Debug/net8.0/Ambev.DeveloperEvaluation.WebApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
+    tty: true

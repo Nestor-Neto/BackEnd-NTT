@@ -1,0 +1,1 @@
+C:\Projeto_NetCore\Teste Empresa NTT\arquivo NTT\template\backend\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
