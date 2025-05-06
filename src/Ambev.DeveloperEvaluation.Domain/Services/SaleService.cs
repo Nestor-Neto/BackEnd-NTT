@@ -2,6 +2,7 @@ using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Domain.Interface.IRepositories;
 using Ambev.DeveloperEvaluation.Domain.Interface.IServices;
 using Ambev.DeveloperEvaluation.Domain.Entities.DataTransferObjects;
+using Ambev.DeveloperEvaluation.Domain.Exceptions;
 
 namespace Ambev.DeveloperEvaluation.Domain.Services;
 
@@ -75,14 +76,18 @@ public class SaleService : ISaleService
     {
         var sale = await _saleRepository.GetByIdAsync(id);
         if (sale == null)
-            throw new Exception("Sale not found!");
+            throw new BusinessRuleException("Venda não encontrada!");
 
-        var cancelledSale = await _saleRepository.CancelSaleAsync(id);
+        if (sale.Cancelled)
+            throw new BusinessRuleException("Venda já está cancelada!");
+
+        sale.Cancelled = true;
+        await _saleRepository.UpdateAsync(sale);
         
         // Publica mensagem de venda cancelada
         await _messageBrokerService.PublishSaleCancelledAsync(id, "Venda cancelada pelo usuário");
 
-        return cancelledSale!;
+        return sale;
     }
 
     public async Task<int> GetTotalSalesCountAsync()
