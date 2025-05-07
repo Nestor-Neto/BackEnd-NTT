@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HU4RCnxbf8c=",
+  "dgSpecHash": "gEdhdgDXGQg=",
   "success": true,
-  "projectFilePath": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.IoC\\Ambev.DeveloperEvaluation.IoC.csproj",
+  "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.IoC\\Ambev.DeveloperEvaluation.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nestor Neto\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Nestor Neto\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
