@@ -6,7 +6,7 @@ using Ambev.DeveloperEvaluation.Domain.Interface.IServices;
 using Ambev.DeveloperEvaluation.ORM.Repositories;
 using Ambev.DeveloperEvaluation.Domain.Services;
 using Ambev.DeveloperEvaluation.Application.Services;
-using Ambev.DeveloperEvaluation.MessageBroker;
+using Ambev.DeveloperEvaluation.MessagesBrokers;
 namespace Ambev.DeveloperEvaluation.IoC.ModuleInitializers;
 
 public class ApplicationModuleInitializer : IModuleInitializer

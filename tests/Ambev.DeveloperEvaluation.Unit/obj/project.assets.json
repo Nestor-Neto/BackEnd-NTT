@@ -1996,7 +1996,7 @@
         "dependencies": {
           "Ambev.DeveloperEvaluation.Common": "1.0.0",
           "Ambev.DeveloperEvaluation.Domain": "1.0.0",
-          "Ambev.DeveloperEvaluation.MessageBroker": "1.0.0",
+          "Ambev.DeveloperEvaluation.MessagesBrokers": "1.0.0",
           "AutoMapper": "13.0.1",
           "MediatR": "12.4.1",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
@@ -2058,7 +2058,7 @@
           "Ambev.DeveloperEvaluation.Application": "1.0.0",
           "Ambev.DeveloperEvaluation.Common": "1.0.0",
           "Ambev.DeveloperEvaluation.Domain": "1.0.0",
-          "Ambev.DeveloperEvaluation.MessageBroker": "1.0.0",
+          "Ambev.DeveloperEvaluation.MessagesBrokers": "1.0.0",
           "Ambev.DeveloperEvaluation.ORM": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
@@ -2072,7 +2072,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+      "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -2080,14 +2080,11 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
         },
         "compile": {
-          "bin/placeholder/Ambev.DeveloperEvaluation.MessageBroker.dll": {}
+          "bin/placeholder/Ambev.DeveloperEvaluation.MessagesBrokers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Ambev.DeveloperEvaluation.MessageBroker.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+          "bin/placeholder/Ambev.DeveloperEvaluation.MessagesBrokers.dll": {}
+        }
       },
       "Ambev.DeveloperEvaluation.ORM/1.0.0": {
         "type": "project",
@@ -5891,10 +5888,10 @@
       "path": "../../src/Ambev.DeveloperEvaluation.IoC/Ambev.DeveloperEvaluation.IoC.csproj",
       "msbuildProject": "../../src/Ambev.DeveloperEvaluation.IoC/Ambev.DeveloperEvaluation.IoC.csproj"
     },
-    "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+    "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
       "type": "project",
-      "path": "../../src/Ambev.DeveloperEvaluation.MessageBroker/Ambev.DeveloperEvaluation.MessageBroker.csproj",
-      "msbuildProject": "../../src/Ambev.DeveloperEvaluation.MessageBroker/Ambev.DeveloperEvaluation.MessageBroker.csproj"
+      "path": "../../src/Ambev.DeveloperEvaluation.MessagesBrokers/Ambev.DeveloperEvaluation.MessagesBrokers.csproj",
+      "msbuildProject": "../../src/Ambev.DeveloperEvaluation.MessagesBrokers/Ambev.DeveloperEvaluation.MessagesBrokers.csproj"
     },
     "Ambev.DeveloperEvaluation.ORM/1.0.0": {
       "type": "project",
@@ -5911,6 +5908,7 @@
     "net8.0": [
       "Ambev.DeveloperEvaluation.Application >= 1.0.0",
       "Ambev.DeveloperEvaluation.Domain >= 1.0.0",
+      "Ambev.DeveloperEvaluation.MessagesBrokers >= 1.0.0",
       "Ambev.DeveloperEvaluation.ORM >= 1.0.0",
       "Ambev.DeveloperEvaluation.WebApi >= 1.0.0",
       "Bogus >= 35.6.1",
@@ -5963,6 +5961,9 @@
             },
             "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
               "projectPath": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj"
+            },
+            "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj": {
+              "projectPath": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj"
             },
             "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.ORM\\Ambev.DeveloperEvaluation.ORM.csproj": {
               "projectPath": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.ORM\\Ambev.DeveloperEvaluation.ORM.csproj"

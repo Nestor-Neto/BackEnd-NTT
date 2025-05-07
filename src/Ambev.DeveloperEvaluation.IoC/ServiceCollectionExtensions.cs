@@ -1,4 +1,4 @@
-using Ambev.DeveloperEvaluation.MessageBroker;
+using Ambev.DeveloperEvaluation.MessagesBrokers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Ambev.DeveloperEvaluation.IoC

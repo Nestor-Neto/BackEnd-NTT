@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{54E6E012-F460-4A2B-95C5-27A2EF18A713}|tests\\Ambev.DeveloperEvaluation.Unit\\Ambev.DeveloperEvaluation.Unit.csproj|c:\\projeto_netcore\\projeto_ntt\\backend-ntt\\tests\\ambev.developerevaluation.unit\\controllers\\salescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E6E012-F460-4A2B-95C5-27A2EF18A713}|tests\\Ambev.DeveloperEvaluation.Unit\\Ambev.DeveloperEvaluation.Unit.csproj|solutionrelative:tests\\ambev.developerevaluation.unit\\controllers\\salescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 348,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SalesControllerTests.cs",
-              "DocumentMoniker": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\tests\\Ambev.DeveloperEvaluation.Unit\\Controllers\\SalesControllerTests.cs",
-              "RelativeDocumentMoniker": "tests\\Ambev.DeveloperEvaluation.Unit\\Controllers\\SalesControllerTests.cs",
-              "ToolTip": "C:\\Projeto_NetCore\\Projeto_NTT\\BackEnd-NTT\\tests\\Ambev.DeveloperEvaluation.Unit\\Controllers\\SalesControllerTests.cs",
-              "RelativeToolTip": "tests\\Ambev.DeveloperEvaluation.Unit\\Controllers\\SalesControllerTests.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAuwNMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T20:07:53.733Z",
-              "EditorCaption": ""
             }
           ]
         }

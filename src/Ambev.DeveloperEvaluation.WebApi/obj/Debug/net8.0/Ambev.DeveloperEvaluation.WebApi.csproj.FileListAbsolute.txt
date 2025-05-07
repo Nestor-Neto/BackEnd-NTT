@@ -281,20 +281,17 @@ C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.dll
-C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessageBroker.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.ORM.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Application.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.ORM.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.pdb
-C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessageBroker.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.csproj.AssemblyReference.cache
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.AssemblyInfoInputs.cache
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.AssemblyInfo.cs
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.csproj.CoreCompileInputs.cache
-C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.sourcelink.json
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\scopedcss\bundle\Ambev.DeveloperEvaluation.WebApi.styles.css
@@ -314,3 +311,5 @@ C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.genruntimeconfig.cache
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.WebApi.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessagesBrokers.dll
+C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessagesBrokers.pdb

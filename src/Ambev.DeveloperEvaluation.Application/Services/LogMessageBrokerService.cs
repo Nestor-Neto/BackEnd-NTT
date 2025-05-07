@@ -1,5 +1,5 @@
 using Ambev.DeveloperEvaluation.Domain.Interface.IServices;
-using Ambev.DeveloperEvaluation.MessageBroker;
+using Ambev.DeveloperEvaluation.MessagesBrokers;
 using Microsoft.Extensions.Logging;
 
 namespace Ambev.DeveloperEvaluation.Application.Services;

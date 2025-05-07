@@ -17,9 +17,9 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Domain\Ambev.DeveloperEvaluation.Domain.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Application\Ambev.DeveloperEvaluation.Application.csproj" />
+		<ProjectReference Include="..\Ambev.DeveloperEvaluation.MessagesBrokers\Ambev.DeveloperEvaluation.MessagesBrokers.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.ORM\Ambev.DeveloperEvaluation.ORM.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Common\Ambev.DeveloperEvaluation.Common.csproj" />
-		<ProjectReference Include="..\Ambev.DeveloperEvaluation.MessageBroker\Ambev.DeveloperEvaluation.MessageBroker.csproj" />
 	</ItemGroup>
 
 </Project>

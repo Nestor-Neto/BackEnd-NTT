@@ -1343,7 +1343,7 @@
         "dependencies": {
           "Ambev.DeveloperEvaluation.Common": "1.0.0",
           "Ambev.DeveloperEvaluation.Domain": "1.0.0",
-          "Ambev.DeveloperEvaluation.MessageBroker": "1.0.0",
+          "Ambev.DeveloperEvaluation.MessagesBrokers": "1.0.0",
           "AutoMapper": "13.0.1",
           "MediatR": "12.4.1",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
@@ -1398,7 +1398,7 @@
           "bin/placeholder/Ambev.DeveloperEvaluation.Domain.dll": {}
         }
       },
-      "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+      "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1406,14 +1406,11 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
         },
         "compile": {
-          "bin/placeholder/Ambev.DeveloperEvaluation.MessageBroker.dll": {}
+          "bin/placeholder/Ambev.DeveloperEvaluation.MessagesBrokers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Ambev.DeveloperEvaluation.MessageBroker.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+          "bin/placeholder/Ambev.DeveloperEvaluation.MessagesBrokers.dll": {}
+        }
       },
       "Ambev.DeveloperEvaluation.ORM/1.0.0": {
         "type": "project",
@@ -3390,10 +3387,10 @@
       "path": "../../src/Ambev.DeveloperEvaluation.Domain/Ambev.DeveloperEvaluation.Domain.csproj",
       "msbuildProject": "../../src/Ambev.DeveloperEvaluation.Domain/Ambev.DeveloperEvaluation.Domain.csproj"
     },
-    "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+    "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
       "type": "project",
-      "path": "../../src/Ambev.DeveloperEvaluation.MessageBroker/Ambev.DeveloperEvaluation.MessageBroker.csproj",
-      "msbuildProject": "../../src/Ambev.DeveloperEvaluation.MessageBroker/Ambev.DeveloperEvaluation.MessageBroker.csproj"
+      "path": "../../src/Ambev.DeveloperEvaluation.MessagesBrokers/Ambev.DeveloperEvaluation.MessagesBrokers.csproj",
+      "msbuildProject": "../../src/Ambev.DeveloperEvaluation.MessagesBrokers/Ambev.DeveloperEvaluation.MessagesBrokers.csproj"
     },
     "Ambev.DeveloperEvaluation.ORM/1.0.0": {
       "type": "project",

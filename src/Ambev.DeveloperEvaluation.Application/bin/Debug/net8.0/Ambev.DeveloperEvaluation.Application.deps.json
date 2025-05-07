@@ -10,7 +10,7 @@
         "dependencies": {
           "Ambev.DeveloperEvaluation.Common": "1.0.0",
           "Ambev.DeveloperEvaluation.Domain": "1.0.0",
-          "Ambev.DeveloperEvaluation.MessageBroker": "1.0.0",
+          "Ambev.DeveloperEvaluation.MessagesBrokers": "1.0.0",
           "AutoMapper": "13.0.1",
           "MediatR": "12.4.1",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
@@ -533,13 +533,13 @@
           }
         }
       },
-      "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+      "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
         "dependencies": {
           "Ambev.DeveloperEvaluation.Domain": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
         },
         "runtime": {
-          "Ambev.DeveloperEvaluation.MessageBroker.dll": {
+          "Ambev.DeveloperEvaluation.MessagesBrokers.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -920,7 +920,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Ambev.DeveloperEvaluation.MessageBroker/1.0.0": {
+    "Ambev.DeveloperEvaluation.MessagesBrokers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

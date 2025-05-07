@@ -22,10 +22,8 @@ C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Applica
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Application.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.dll
-C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessageBroker.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.pdb
-C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessageBroker.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Application.csproj.AssemblyReference.cache
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Application.AssemblyInfoInputs.cache
@@ -37,3 +35,5 @@ C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Applica
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\refint\Ambev.DeveloperEvaluation.Application.dll
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Application.pdb
 C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.Application.dll
+C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessagesBrokers.dll
+C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.Application\bin\Debug\net8.0\Ambev.DeveloperEvaluation.MessagesBrokers.pdb
