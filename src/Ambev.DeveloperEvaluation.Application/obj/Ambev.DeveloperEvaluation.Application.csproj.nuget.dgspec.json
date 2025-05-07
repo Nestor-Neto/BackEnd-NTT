@@ -39,13 +39,8 @@
               "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
                 "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj"
               },
-<<<<<<< HEAD
               "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj": {
                 "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj"
-=======
-              "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj": {
-                "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj"
->>>>>>> origin/main
               }
             }
           }
@@ -310,7 +305,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -319,16 +313,6 @@
         "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj",
         "packagesPath": "C:\\Users\\Nestor Neto\\.nuget\\packages\\",
         "outputPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\obj\\",
-=======
-    "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj",
-        "projectName": "Ambev.DeveloperEvaluation.MessageBroker",
-        "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj",
-        "packagesPath": "C:\\Users\\Nestor Neto\\.nuget\\packages\\",
-        "outputPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\obj\\",
->>>>>>> origin/main
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,55 @@
+## Arquivos e pastas ignorados pelo Visual Studio
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## Arquivos de build
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Arquivos de projeto
+*.swp
+*.*~
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Arquivos de teste
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## Arquivos de NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+## Arquivos de ambiente
+*.env
+appsettings.*.json
+!appsettings.json
+!appsettings.Example.json
+
+## Arquivos de IDE
+.idea/
+*.sln.iml
+
+## Arquivos do sistema operacional
+.DS_Store
+Thumbs.db 

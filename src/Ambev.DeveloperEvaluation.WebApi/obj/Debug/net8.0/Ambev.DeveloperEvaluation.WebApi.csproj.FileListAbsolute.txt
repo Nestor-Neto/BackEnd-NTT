@@ -484,4 +484,3 @@ C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
