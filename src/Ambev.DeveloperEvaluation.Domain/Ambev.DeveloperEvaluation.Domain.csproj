@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.24.0" />
   </ItemGroup>
 
   <ItemGroup>

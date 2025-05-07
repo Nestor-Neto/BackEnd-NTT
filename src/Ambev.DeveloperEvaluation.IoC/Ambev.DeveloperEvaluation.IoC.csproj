@@ -22,4 +22,9 @@
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Common\Ambev.DeveloperEvaluation.Common.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+		<PackageReference Include="MongoDB.Bson" Version="2.24.0" />
+	</ItemGroup>
+
 </Project>

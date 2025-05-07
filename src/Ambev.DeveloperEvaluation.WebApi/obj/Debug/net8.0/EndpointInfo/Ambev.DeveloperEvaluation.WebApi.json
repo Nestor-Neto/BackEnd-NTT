@@ -100,14 +100,21 @@
         },
         "responses": {
           "201": {
-            "description": "Created"
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData`1[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
           },
           "400": {
             "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
                 }
               }
             }
@@ -117,13 +124,20 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
                 }
               }
             }
           },
           "500": {
-            "description": "Server Error"
+            "description": "Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
+                }
+              }
+            }
           }
         }
       },
@@ -152,15 +166,42 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success"
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData`1[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
           },
           "400": {
             "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
                 }
               }
             }
@@ -185,15 +226,42 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "404": {
-            "description": "Not Found",
+          "201": {
+            "description": "Created",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData`1[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse"
                 }
               }
             }
@@ -659,6 +727,66 @@
         },
         "additionalProperties": false
       },
+      "Ambev.DeveloperEvaluation.Domain.Entities.Branch": {
+        "type": "object",
+        "properties": {
+          "branchId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "branchName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "isBranch": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "customerId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ambev.DeveloperEvaluation.Domain.Entities.Customer": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.Domain.Entities.Branch"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Ambev.DeveloperEvaluation.Domain.Entities.Sale": {
         "type": "object",
         "properties": {
@@ -707,6 +835,10 @@
       "Ambev.DeveloperEvaluation.Domain.Entities.SaleItem": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
           "productId": {
             "type": "string",
             "format": "uuid"
@@ -771,6 +903,29 @@
               "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.Common.Validation.ValidationErrorDetail"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData`1[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.Common.Validation.ValidationErrorDetail"
+            },
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Ambev.DeveloperEvaluation.Domain.Entities.Customer"
           }
         },
         "additionalProperties": false
@@ -1107,33 +1262,6 @@
           }
         },
         "additionalProperties": false
-      },
-      "Microsoft.AspNetCore.Mvc.ProblemDetails": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "nullable": true
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "detail": {
-            "type": "string",
-            "nullable": true
-          },
-          "instance": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": { }
       }
     }
   }

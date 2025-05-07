@@ -67,9 +67,9 @@ public class SalesController : ControllerBase
         {
             return Conflict(new { message = ex.Message });
         }
-        catch (Exception )
+        catch (Exception ex)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
         }
     }
 
@@ -87,11 +87,18 @@ public class SalesController : ControllerBase
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var result = await _saleService.GetSaleAsync(id);
-        if (result == null)
-            return NotFound(new { message = $"Sale with ID {id} not found." });
+        try
+        {
+            var result = await _saleService.GetSaleAsync(id);
+            if (result == null)
+                return NotFound(new { message = $"Sale with ID {id} not found." });
 
-        return Ok(result);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
+        }
     }
 
     /// <summary>
@@ -109,8 +116,10 @@ public class SalesController : ControllerBase
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int size = 10)
     {
-        if (page < 1 || size < 1)
-            return BadRequest(new { message = "Pagination parameters must be greater than zero." });
+        try
+        {
+            if (page < 1 || size < 1)
+                return BadRequest(new { message = "Pagination parameters must be greater than zero." });
 
         var sales = await _saleService.GetSalesAsync(page, size);
         var totalCount = await _saleService.GetTotalSalesCountAsync();
@@ -126,7 +135,12 @@ public class SalesController : ControllerBase
             Message = "Sales retrieved successfully."
         };
 
-        return Ok(response);
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
+        }
     }
 
     /// <summary>
@@ -159,9 +173,9 @@ public class SalesController : ControllerBase
         {
             return Conflict(new { message = ex.Message });
         }
-        catch (Exception )
+        catch (Exception ex)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
         }
     }
 }

@@ -121,17 +121,18 @@ namespace Ambev.DeveloperEvaluation.ORM.Migrations
 
             modelBuilder.Entity("Ambev.DeveloperEvaluation.Domain.Entities.SaleItem", b =>
                 {
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
-                        .HasColumnName("product_id");
-
-                    b.Property<Guid>("SaleId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("sale_id");
+                        .HasColumnName("id");
 
                     b.Property<decimal>("Discount")
                         .HasColumnType("decimal(10,2)")
                         .HasColumnName("discount");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("product_id");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -147,18 +148,14 @@ namespace Ambev.DeveloperEvaluation.ORM.Migrations
                         .HasColumnType("decimal(10,2)")
                         .HasColumnName("unit_price");
 
-                    b.Property<Guid>("sale_id")
+                    b.Property<Guid?>("sale_id")
                         .HasColumnType("uuid");
 
-                    b.HasKey("ProductId", "SaleId");
+                    b.HasKey("Id");
 
                     b.HasIndex("sale_id");
 
-                    b.ToTable("sale_items", null, t =>
-                        {
-                            t.Property("sale_id")
-                                .HasColumnName("sale_id1");
-                        });
+                    b.ToTable("sale_items", (string)null);
                 });
 
             modelBuilder.Entity("Ambev.DeveloperEvaluation.Domain.Entities.User", b =>
@@ -222,8 +219,7 @@ namespace Ambev.DeveloperEvaluation.ORM.Migrations
                     b.HasOne("Ambev.DeveloperEvaluation.Domain.Entities.Sale", null)
                         .WithMany("Items")
                         .HasForeignKey("sale_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Ambev.DeveloperEvaluation.Domain.Entities.Customer", b =>

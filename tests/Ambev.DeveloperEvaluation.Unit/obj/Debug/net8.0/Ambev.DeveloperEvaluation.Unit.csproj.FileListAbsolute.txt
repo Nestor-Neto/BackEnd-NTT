@@ -707,3 +707,16 @@ C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluatio
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Unit.pdb
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\obj\Debug\net8.0\Ambev.DeveloperEvaluation.Unit.genruntimeconfig.cache
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.Unit.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\AWSSDK.Core.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\DnsClient.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\SharpCompress.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\Snappier.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\ZstdSharp.dll
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll

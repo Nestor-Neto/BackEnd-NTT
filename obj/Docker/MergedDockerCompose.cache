@@ -1,4 +1,4 @@
-name: dockercompose1604159926153040923
+name: dockercompose14021646568731271043
 services:
   ambev.developerevaluation.cache:
     command:
@@ -44,7 +44,7 @@ services:
         protocol: tcp
   ambev.developerevaluation.webapi:
     build:
-      context: C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT
+      context: C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT
       dockerfile: src/Ambev.DeveloperEvaluation.WebApi/Dockerfile
     container_name: ambev_developer_evaluation_webapi
     environment:
@@ -76,4 +76,4 @@ services:
           create_host_path: true
 networks:
   default:
-    name: dockercompose1604159926153040923_default
+    name: dockercompose14021646568731271043_default

@@ -60,27 +60,31 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData\u00601[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 201
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 400
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 409
       },
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 500
       }
     ]
@@ -106,16 +110,32 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData\u00601[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 400
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 500
       }
     ]
   },
@@ -135,16 +155,32 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData\u00601[[Ambev.DeveloperEvaluation.Domain.Entities.Customer, Ambev.DeveloperEvaluation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
-        "StatusCode": 404
+        "StatusCode": 201
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 500
       }
     ]
   },
