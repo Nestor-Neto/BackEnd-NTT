@@ -8,5 +8,4 @@ namespace Ambev.DeveloperEvaluation.Domain.Interface.IRepositories;
         Task<IEnumerable<Sale>> GetAllAsync(int page, int size);
         Task UpdateAsync(Sale sale);
         Task<int> GetTotalCountAsync();
-        Task<Sale> CancelSaleAsync(Guid id);
     }

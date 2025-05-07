@@ -16,7 +16,7 @@ public class CustomerService : ICustomerService
 
     public async Task<Customer> CreateCustomerAsync(CreateCustomerDto customerDto)
     {
-        // Gera um novo CustomerId
+        
         var customerId = Guid.NewGuid();
 
         var customer = new Customer
@@ -27,7 +27,7 @@ public class CustomerService : ICustomerService
             Phone = customerDto.Phone,
             Branches = customerDto.Branches.Select(branch => new Branch
             {
-                BranchId = Guid.NewGuid(), // Gera um novo BranchId
+                BranchId = Guid.NewGuid(), 
                 BranchName = branch.BranchName,
                 Email = branch.Email,
                 Phone = branch.Phone,

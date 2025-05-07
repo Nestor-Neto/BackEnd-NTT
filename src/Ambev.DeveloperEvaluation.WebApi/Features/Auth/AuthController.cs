@@ -70,7 +70,7 @@ public class AuthController : BaseController
         {
             return Unauthorized(new { message = ex.Message });
         }
-        catch (Exception ex)
+        catch (Exception )
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
         }

@@ -181,6 +181,14 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.10.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
             }
           },
           "imports": [

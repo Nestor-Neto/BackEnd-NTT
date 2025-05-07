@@ -35,10 +35,10 @@ public class SalesController : ControllerBase
     /// <response code="409">Conflict - Business rules violated</response>
     /// <response code="500">Internal server error</response>
     [HttpPost]
-    [ProducesResponseType(StatusCodes.Status201Created)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(StatusCodes.Status409Conflict)]
-    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [ProducesResponseType(typeof(ApiResponseWithData<Sale>), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Create(
         [FromBody] CreateSaleRequest request,
         [FromServices] IMapper mapper)
@@ -69,7 +69,7 @@ public class SalesController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
         }
     }
 
@@ -81,15 +81,24 @@ public class SalesController : ControllerBase
     /// <response code="200">Sale found</response>
     /// <response code="404">Sale not found</response>
     [HttpGet("{id:guid}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ApiResponseWithData<Sale>), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var result = await _saleService.GetSaleAsync(id);
-        if (result == null)
-            return NotFound(new { message = $"Sale with ID {id} not found." });
+        try
+        {
+            var result = await _saleService.GetSaleAsync(id);
+            if (result == null)
+                return NotFound(new { message = $"Sale with ID {id} not found." });
 
-        return Ok(result);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
+        }
     }
 
     /// <summary>
@@ -101,12 +110,16 @@ public class SalesController : ControllerBase
     /// <response code="200">List of sales returned successfully</response>
     /// <response code="400">Invalid pagination parameters</response>
     [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponseWithData<IEnumerable<Sale>>), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int size = 10)
     {
-        if (page < 1 || size < 1)
-            return BadRequest(new { message = "Pagination parameters must be greater than zero." });
+        try
+        {
+            if (page < 1 || size < 1)
+                return BadRequest(new { message = "Pagination parameters must be greater than zero." });
 
         var sales = await _saleService.GetSalesAsync(page, size);
         var totalCount = await _saleService.GetTotalSalesCountAsync();
@@ -122,7 +135,12 @@ public class SalesController : ControllerBase
             Message = "Sales retrieved successfully."
         };
 
-        return Ok(response);
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
+        }
     }
 
     /// <summary>
@@ -135,9 +153,10 @@ public class SalesController : ControllerBase
     /// <response code="404">Sale not found</response>
     /// <response code="409">Sale is already cancelled</response>
     [HttpPut("{id:guid}/cancel")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [ProducesResponseType(StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ApiResponseWithData<Sale>), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Cancel(
         [FromRoute] Guid id,
         [FromServices] IMapper mapper)
@@ -156,7 +175,7 @@ public class SalesController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
+            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request. " + ex.Message });
         }
     }
 }

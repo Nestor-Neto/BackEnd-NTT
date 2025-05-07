@@ -120,7 +120,7 @@ public class UsersController : BaseController
         {
             return NotFound(new { message = ex.Message });
         }
-        catch (Exception ex)
+        catch (Exception )
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
         }
@@ -165,7 +165,7 @@ public class UsersController : BaseController
         {
             return NotFound(new { message = ex.Message });
         }
-        catch (Exception ex)
+        catch (Exception )
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
         }

@@ -1,8 +1,8 @@
 namespace Ambev.DeveloperEvaluation.Domain.Entities;
     public class SaleItem
     {
+        public Guid Id { get; set; }
         public Guid ProductId { get; set; }
-        public Guid SaleId { get; set; }
         public required string ProductName { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }

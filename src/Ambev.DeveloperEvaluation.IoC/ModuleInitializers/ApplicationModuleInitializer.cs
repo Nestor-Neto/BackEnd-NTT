@@ -6,7 +6,8 @@ using Ambev.DeveloperEvaluation.Domain.Interface.IServices;
 using Ambev.DeveloperEvaluation.ORM.Repositories;
 using Ambev.DeveloperEvaluation.Domain.Services;
 using Ambev.DeveloperEvaluation.Application.Services;
-using Ambev.DeveloperEvaluation.MessageBroker;
+using Ambev.DeveloperEvaluation.MessagesBrokers;
+using Ambev.DeveloperEvaluation.Domain.Interface;
 namespace Ambev.DeveloperEvaluation.IoC.ModuleInitializers;
 
 public class ApplicationModuleInitializer : IModuleInitializer
@@ -18,6 +19,8 @@ public class ApplicationModuleInitializer : IModuleInitializer
         builder.Services.AddScoped<ISaleRepository, SaleRepository>();
         builder.Services.AddScoped<ISaleService, SaleService>();
         builder.Services.AddScoped<ICustomerService, CustomerService>();
+        builder.Services.AddScoped<IMongoDBService, MongoDBService>();
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         
         // Registra o MessageBroker
         builder.Services.AddScoped<IMessageBroker, LogMessageBroker>();

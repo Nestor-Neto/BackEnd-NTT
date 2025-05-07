@@ -9,14 +9,14 @@ public class SaleItemMapping : IEntityTypeConfiguration<SaleItem>
         {
             builder.ToTable("sale_items");
 
-            builder.HasKey(si => new { si.ProductId, si.SaleId });
+            builder.HasKey(s => s.Id);
+
+            builder.Property(s => s.Id)
+                .HasColumnName("id")
+                .IsRequired();
 
             builder.Property(si => si.ProductId)
                 .HasColumnName("product_id")
-                .IsRequired();
-
-            builder.Property(si => si.SaleId)
-                .HasColumnName("sale_id")
                 .IsRequired();
 
             builder.Property(si => si.ProductName)

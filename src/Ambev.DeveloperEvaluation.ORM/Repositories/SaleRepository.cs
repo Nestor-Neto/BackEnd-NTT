@@ -43,16 +43,4 @@ public class SaleRepository : ISaleRepository
         {
             return await _context.Set<Sale>().CountAsync();
         }
-
-        public async Task<Sale> CancelSaleAsync(Guid id)
-        {
-            var sale = await _context.Set<Sale>().FirstOrDefaultAsync(s => s.Id == id);
-            if (sale == null)
-                throw new Exception("Sale not found!");
-            sale.Cancelled = true; 
-
-            var result = _context.Set<Sale>().Update(sale);
-            await _context.SaveChangesAsync();
-            return result.Entity;
-        }
 }
