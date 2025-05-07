@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B19079B3-A9DD-4408-9ED2-899D735C66BF}|src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj|c:\\projeto_netcore\\projeto_backendntt\\backend-ntt\\src\\ambev.developerevaluation.domain\\services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19079B3-A9DD-4408-9ED2-899D735C66BF}|src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj|solutionrelative:src\\ambev.developerevaluation.domain\\services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B19079B3-A9DD-4408-9ED2-899D735C66BF}|src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj|c:\\projeto_netcore\\projeto_backendntt\\backend-ntt\\src\\ambev.developerevaluation.domain\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19079B3-A9DD-4408-9ED2-899D735C66BF}|src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj|solutionrelative:src\\ambev.developerevaluation.domain\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Services\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "src\\Ambev.DeveloperEvaluation.Domain\\Services\\UnitOfWork.cs",
+              "ToolTip": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Services\\UnitOfWork.cs",
+              "RelativeToolTip": "src\\Ambev.DeveloperEvaluation.Domain\\Services\\UnitOfWork.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAlwCUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T04:25:47.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SaleService.cs",
               "DocumentMoniker": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Services\\SaleService.cs",
               "RelativeDocumentMoniker": "src\\Ambev.DeveloperEvaluation.Domain\\Services\\SaleService.cs",
               "ToolTip": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Services\\SaleService.cs",
               "RelativeToolTip": "src\\Ambev.DeveloperEvaluation.Domain\\Services\\SaleService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAlwE0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAlwEAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T03:56:01.825Z",
               "EditorCaption": ""

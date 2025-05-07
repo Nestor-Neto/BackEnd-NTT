@@ -69,7 +69,7 @@ public class SaleService : ISaleService
             // Usa o Unit of Work para garantir consistência entre os bancos
             var createdSale = await _unitOfWork.CreateSaleAsync(sale);
             
-            // Se chegou aqui, significa que salvou em ambos os bancos
+            // foi gravado em ambos os bancos
             var totalAmount = sale.Items.Sum(item => item.Quantity * item.UnitPrice);
             await _messageBrokerService.PublishSaleCreatedAsync(sale.Id, sale.CustomerName, totalAmount);
             _logger.LogInformation("Venda {SaleId} criada com sucesso. Valor total: {TotalAmount}", sale.Id, totalAmount);
