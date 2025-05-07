@@ -2273,11 +2273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Application\\Ambev.DeveloperEvaluation.Application.csproj",
+      "projectUniqueName": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Application\\Ambev.DeveloperEvaluation.Application.csproj",
       "projectName": "Ambev.DeveloperEvaluation.Application",
-      "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Application\\Ambev.DeveloperEvaluation.Application.csproj",
+      "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Application\\Ambev.DeveloperEvaluation.Application.csproj",
       "packagesPath": "C:\\Users\\Nestor Neto\\.nuget\\packages\\",
-      "outputPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Application\\obj\\",
+      "outputPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2299,14 +2299,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
-              "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj"
+            "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
+              "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj"
             },
-            "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
-              "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj"
+            "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
+              "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj"
             },
-            "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj": {
-              "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj"
+            "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj": {
+              "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj"
             }
           }
         }

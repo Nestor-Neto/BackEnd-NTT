@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {}
+    "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
+    "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj",
+        "projectUniqueName": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj",
         "projectName": "Ambev.DeveloperEvaluation.Common",
-        "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj",
+        "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj",
         "packagesPath": "C:\\Users\\Nestor Neto\\.nuget\\packages\\",
-        "outputPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\obj\\",
+        "outputPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -127,14 +127,14 @@
         }
       }
     },
-    "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
+    "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj",
+        "projectUniqueName": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj",
         "projectName": "Ambev.DeveloperEvaluation.Domain",
-        "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj",
+        "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\Ambev.DeveloperEvaluation.Domain.csproj",
         "packagesPath": "C:\\Users\\Nestor Neto\\.nuget\\packages\\",
-        "outputPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Domain\\obj\\",
+        "outputPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,8 +156,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
-                "projectPath": "C:\\Projeto_NetCore\\Teste Empresa NTT\\arquivo NTT\\template\\backend\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj"
+              "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj": {
+                "projectPath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Common\\Ambev.DeveloperEvaluation.Common.csproj"
               }
             }
           }
