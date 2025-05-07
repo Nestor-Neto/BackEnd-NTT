@@ -3,6 +3,7 @@ using Ambev.DeveloperEvaluation.Domain.Interface.IRepositories;
 using Ambev.DeveloperEvaluation.Domain.Interface.IServices;
 using Ambev.DeveloperEvaluation.Domain.Entities.DataTransferObjects;
 using Ambev.DeveloperEvaluation.Domain.Exceptions;
+using Microsoft.Extensions.Logging;
 
 namespace Ambev.DeveloperEvaluation.Domain.Services;
 
@@ -10,17 +11,21 @@ public class SaleService : ISaleService
 {
     private readonly ISaleRepository _saleRepository;
     private readonly IMessageBrokerService _messageBrokerService;
+    private readonly ILogger<SaleService> _logger;
     private const int MAX_ITEMS_PER_PRODUCT = 20;
     private const int MIN_ITEMS_FOR_DISCOUNT = 4;
 
-    public SaleService(ISaleRepository saleRepository, IMessageBrokerService messageBrokerService)
+    public SaleService(ISaleRepository saleRepository, IMessageBrokerService messageBrokerService, ILogger<SaleService> logger)
     {
         _saleRepository = saleRepository;
         _messageBrokerService = messageBrokerService;
+        _logger = logger;
     }
 
     public async Task<Sale> CreateSaleAsync(SaleCreateDto saleCreateDto)
     {
+        _logger.LogInformation("Iniciando criação de nova venda");
+        
         // Validar limite máximo de itens por produto
         foreach (var item in saleCreateDto.Items)
         {
@@ -58,40 +63,59 @@ public class SaleService : ISaleService
         // Publica mensagem de venda criada
         var totalAmount = sale.Items.Sum(item => item.Quantity * item.UnitPrice);
         await _messageBrokerService.PublishSaleCreatedAsync(sale.Id, sale.CustomerName, totalAmount);
+        _logger.LogInformation("Venda {SaleId} criada com sucesso. Valor total: {TotalAmount}", sale.Id, totalAmount);
 
         return createdSale;
     }
 
     public async Task<Sale?> GetSaleAsync(Guid id)
     {
-        return await _saleRepository.GetByIdAsync(id);
+        _logger.LogInformation("Buscando venda com ID: {SaleId}", id);
+        var sale = await _saleRepository.GetByIdAsync(id);
+        _logger.LogInformation("Venda {SaleId} {Status}", id, sale == null ? "não encontrada" : "encontrada");
+        return sale;
     }
 
     public async Task<IEnumerable<Sale>> GetSalesAsync(int page, int size)
     {
-        return await _saleRepository.GetAllAsync(page, size);
+        _logger.LogInformation("Buscando vendas - Página: {Page}, Tamanho: {Size}", page, size);
+        var sales = await _saleRepository.GetAllAsync(page, size);
+        _logger.LogInformation("Encontradas {Count} vendas", sales.Count());
+        return sales;
     }
 
     public async Task<Sale> CancelSaleAsync(Guid id)
     {
+        _logger.LogInformation("Iniciando cancelamento da venda {SaleId}", id);
+        
         var sale = await _saleRepository.GetByIdAsync(id);
         if (sale == null)
+        {
+            _logger.LogWarning("Tentativa de cancelar venda inexistente: {SaleId}", id);
             throw new BusinessRuleException("Venda não encontrada!");
+        }
 
         if (sale.Cancelled)
+        {
+            _logger.LogWarning("Tentativa de cancelar venda já cancelada: {SaleId}", id);
             throw new BusinessRuleException("Venda já está cancelada!");
+        }
 
         sale.Cancelled = true;
         await _saleRepository.UpdateAsync(sale);
         
         // Publica mensagem de venda cancelada
         await _messageBrokerService.PublishSaleCancelledAsync(id, "Venda cancelada pelo usuário");
+        _logger.LogInformation("Venda {SaleId} cancelada com sucesso", id);
 
         return sale;
     }
 
     public async Task<int> GetTotalSalesCountAsync()
     {
-        return await _saleRepository.GetTotalCountAsync();
+        _logger.LogInformation("Buscando total de vendas");
+        var count = await _saleRepository.GetTotalCountAsync();
+        _logger.LogInformation("Total de vendas: {Count}", count);
+        return count;
     }
 }

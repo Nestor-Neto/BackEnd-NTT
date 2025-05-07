@@ -162,3 +162,14 @@ WHERE id = @p6;
 2025-05-06 17:46:59.191 -03:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
 2025-05-06 17:46:59.194 -03:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
 2025-05-06 17:46:59.198 -03:00 [INF] Microsoft.Hosting.Lifetime Content root path: C:\Projeto_NetCore\Projeto_NTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi
+2025-05-06 22:46:25.656 -03:00 [INF] Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService Health Check enabled at: '/health'
+2025-05-06 22:46:25.894 -03:00 [INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\Nestor Neto\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-06 22:46:26.041 -03:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5119
+2025-05-06 22:46:26.044 -03:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-05-06 22:46:26.047 -03:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-05-06 22:46:26.049 -03:00 [INF] Microsoft.Hosting.Lifetime Content root path: C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi
+2025-05-06 22:47:08.743 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5119/swagger/index.html - null null
+2025-05-06 22:47:08.887 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5119/swagger/index.html - 200 null text/html;charset=utf-8 147.9258ms
+2025-05-06 22:47:09.415 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5119/swagger/v1/swagger.json - null null
+2025-05-06 22:47:09.588 -03:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.1696ms
+2025-05-06 22:58:19.163 -03:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...

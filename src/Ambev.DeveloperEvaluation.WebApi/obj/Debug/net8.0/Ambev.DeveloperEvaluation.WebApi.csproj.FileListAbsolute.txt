@@ -465,7 +465,6 @@ C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ambev.DeveloperEvaluation.WebApi.props
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ambev.DeveloperEvaluation.WebApi.props
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.De.DEA3C0BD.Up2Date
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\Ambev.DeveloperEvaluation.WebApi.dll
 C:\Projeto_NetCore\Projeto_BackEndNTT\BackEnd-NTT\src\Ambev.DeveloperEvaluation.WebApi\obj\Debug\net8.0\refint\Ambev.DeveloperEvaluation.WebApi.dll

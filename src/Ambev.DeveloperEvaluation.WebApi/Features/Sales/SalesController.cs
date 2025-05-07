@@ -67,7 +67,7 @@ public class SalesController : ControllerBase
         {
             return Conflict(new { message = ex.Message });
         }
-        catch (Exception ex)
+        catch (Exception )
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
         }
@@ -159,7 +159,7 @@ public class SalesController : ControllerBase
         {
             return Conflict(new { message = ex.Message });
         }
-        catch (Exception ex)
+        catch (Exception )
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An internal error occurred while processing your request." });
         }
