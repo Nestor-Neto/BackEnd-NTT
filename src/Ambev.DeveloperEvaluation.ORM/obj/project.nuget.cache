@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "MaQJrI+IEGY=",
+=======
+  "dgSpecHash": "M4mrTs0cXXo=",
+>>>>>>> origin/main
   "success": true,
   "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.ORM\\Ambev.DeveloperEvaluation.ORM.csproj",
   "expectedPackageFiles": [

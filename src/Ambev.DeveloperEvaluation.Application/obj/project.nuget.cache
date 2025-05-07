@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "LfSkx1sn/n4=",
+=======
+  "dgSpecHash": "9nj2qiESPkQ=",
+>>>>>>> origin/main
   "success": true,
   "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.Application\\Ambev.DeveloperEvaluation.Application.csproj",
   "expectedPackageFiles": [

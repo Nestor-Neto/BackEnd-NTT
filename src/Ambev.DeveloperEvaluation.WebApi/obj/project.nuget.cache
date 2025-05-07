@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "PrV9/o6lZ+g=",
+=======
+  "dgSpecHash": "HoQrXTcGsJU=",
+>>>>>>> origin/main
   "success": true,
   "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.WebApi\\Ambev.DeveloperEvaluation.WebApi.csproj",
   "expectedPackageFiles": [

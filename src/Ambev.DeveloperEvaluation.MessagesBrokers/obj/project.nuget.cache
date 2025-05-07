@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD:src/Ambev.DeveloperEvaluation.MessagesBrokers/obj/project.nuget.cache
   "dgSpecHash": "MO1vxy8lJMU=",
   "success": true,
   "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessagesBrokers\\Ambev.DeveloperEvaluation.MessagesBrokers.csproj",
+=======
+  "dgSpecHash": "gckyMenHYpQ=",
+  "success": true,
+  "projectFilePath": "C:\\Projeto_NetCore\\Projeto_BackEndNTT\\BackEnd-NTT\\src\\Ambev.DeveloperEvaluation.MessageBroker\\Ambev.DeveloperEvaluation.MessageBroker.csproj",
+>>>>>>> origin/main:src/Ambev.DeveloperEvaluation.MessageBroker/obj/project.nuget.cache
   "expectedPackageFiles": [
     "C:\\Users\\Nestor Neto\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Nestor Neto\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
