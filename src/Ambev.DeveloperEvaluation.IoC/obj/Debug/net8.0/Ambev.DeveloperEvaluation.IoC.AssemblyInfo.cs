@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ambev.DeveloperEvaluation.IoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+512cc4ebcc67d04e174d0e865355139e74dcaf3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2431982a4093aaf2c8823eb595ae6558fd0aca52")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ambev.DeveloperEvaluation.IoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ambev.DeveloperEvaluation.IoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
